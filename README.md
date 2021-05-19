@@ -3,7 +3,31 @@
 <head>
 <meta charset="UTF-8" />
 <script>
+ {
+            let str = window.prompt("Өгүүлбэр өг. Монголоор").toLowerCase();
+            let er = ['а', 'у', 'о'];
+            let em = ['э', 'ө', 'ү'];
+            sep = str.split(' ');
+            // console.log(sep.length)
+            er.forEach(letter => {
+                for (i = 0; i < sep.length; i++) {
+                    if (sep[i].includes(letter)) {
+                        console.log("er: " + sep[i]);
+                    }
 
+                }
+            })
+            em.forEach(letter => {
+                for (i = 0; i < sep.length; i++) {
+                    if (sep[i].includes(letter)) {
+                        console.log("em: " + sep[i]);
+                    }
+
+                }
+            })
+
+
+        }
 </script>
 </head>
 <body>
